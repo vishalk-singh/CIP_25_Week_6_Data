@@ -25,11 +25,11 @@ def main():
 
     # Using Function dictionary.keys() to get all the keys in the dictionary.
     ages_keys = ages.keys()
-    print(ages_keys)
+    print("Only Keys", ages_keys)
 
     # Using Function dictionary.values() to get all the values in the dictionary.
     ages_values = ages.values()
-    print(ages_values)
+    print("Only Value", ages_values)
 
     # Using Function: 'update()' to add more key-value pairs.
     ages.update({'Anne': 15, 'Chris': 16})
@@ -42,6 +42,24 @@ def main():
     # Using Function: 'del' to delete the key-value pair.
     del ages['Lisa']
     print(ages)
+    # Using Function: 'update()' to add more key-value pairs.
+    ages.update({'Lisa': 15})
+    print(ages)
+    ages.update({'Chris': 32})
+    print(ages)
+
+    # Adding a new key-value pair.
+    ages['Vishal'] = 41
+    print(ages)
+
+    #Returns Lists of keys only in form of List.
+    x = list(ages.keys())
+    print(x)
+    # Returns Lists of Value only in form of List.
+    y = list(ages.values())
+    print(y)
+    z = list(ages.items())
+    print(z)
 
     # Using Function: 'clear()' to clear all the key-value pairs in the dictionary.
 
