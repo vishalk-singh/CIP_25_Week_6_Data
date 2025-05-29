@@ -42,6 +42,7 @@ def main():
     # Using Function: 'del' to delete the key-value pair.
     del ages['Lisa']
     print(ages)
+
     # Using Function: 'update()' to add more key-value pairs.
     ages.update({'Lisa': 15})
     print(ages)
@@ -55,6 +56,7 @@ def main():
     #Returns Lists of keys only in form of List.
     x = list(ages.keys())
     print(x)
+
     # Returns Lists of Value only in form of List.
     y = list(ages.values())
     print(y)
