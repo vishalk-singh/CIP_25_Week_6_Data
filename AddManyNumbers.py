@@ -12,15 +12,16 @@ def main():
     """
     print("Let's add many numbers.")
     number = []
-    user_input("Enter number separated by spaces (2 33 400): ", number)
+    user_input_converted_to_list("Enter number separated by spaces (2 33 400) or press inter to quit: ", number)
     result = add_many_numbers(number)
     print(f"Sum of your given numbers are: {result}.")
 
-def user_input(prompt, lst):
+def user_input_converted_to_list(prompt, lst):
     user_number = input(prompt).strip().split()
     for i in range(len(user_number)):
         num = int(user_number[i])
         lst.append(num)
+    return lst
 
 def add_many_numbers(lst):
     total = 0
